@@ -1,145 +1,66 @@
 <!DOCTYPE html>
 <html lang="ja">
 <!-- test -->
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-  <link rel="stylesheet" href="./css/common.css">
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>humberger site</title>
+    <link rel="stylesheet" href="./scss/style.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 
 </head>
 
 <body>
-  <div class="all-wrapper">
+    <!-- --------------------------header----------------------------- -->
+    <header class="l-header">
+        <h1>humberger</h1>
+        <form class="p-search-form" action="#" method="GET">
+            <input class="p-serch-form__keyword" type="text">
+            <input class="p-serch-form__submit" type="submit" value="検索">
+        </form>
+    </header>
+    <!-- ------------------------------hero-------------------------------- -->
 
-    <div class="wrapper-left-contents">
-
-      <div class="container">
-        <header>
-          <div class="header__inner">
-            <h1>Humberger</h1>
-            <div class="header__seach-form">
-              <form name="seach-form" method="get" action="#">
-                <div class="border">
-                  <input class="font-awesome" type="keyword" name="" id="keyword" type="text" placeholder="">
-                  <div class="icon">
-                    <i class="fas fa-search"></i>
-                  </div>
-
-                  <button id="botton" type="submit" name="submit">検索</button>
-                </div>
-              </form>
-
-            </div>
-          </div>
-        </header>
-        <!-- ------------------------hero-------------------------
-        -->
-        <section class="hero">
-          <div class="hero__img">
+    <section class="l-hero">
+        <div class="l-hero__img">
             <img src="img/ID3ba5a44414bb3c0885c27ff61459.png" alt="">
             <p>ダミーサイト</p>
-          </div>
-        </section>
-        <!-- -----------------------------article----------------------- -->
-        <section class="main">
-          <div class="main__wrapper">
-            <article class="contents1">
-              <h2>Take Out</h2>
-              <p class="border"></p>
-              <div class="text">
-                <dl>
-                  <dt>小見出しが入ります</dt>
-                  <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。 </dd>
-                </dl>
-                <dl>
-                  <dt>小見出しが入ります</dt>
-                  <dd>
-                    ハンバーガー食べたい。ハンバーガー食べたい。ハンバーガー食べたい。ハンバーガー食べたい。ハンバーガー食べたい。ハンバーガー食べたい。
-                  </dd>
-                </dl>
-              </div>
-            </article>
-            <article class="contents2">
-              <h2>Eat In</h2>
-              <p class="border"></p>
-              <div class="text">
-                <dl>
-                  <dt>小見出しが入ります</dt>
-                  <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd>
-                </dl>
-                <dl>
-                  <dt>小見出しが入ります</dt>
-                  <dd>
-                    ハンバーガー食べたい。ハンバーガー食べたい。ハンバーガー食べたい。ハンバーガー食べたい。ハンバーガー食べたい。ハンバーガー食べたい。
-                  </dd>
-                </dl>
-              </div>
-            </article>
-          </div>
-        </section>
-        <!-- --------------------------map------------------------- -->
-        <section class="map">
-
-          <div class="map__wrapper">
-            <div class="map__contents">
-              <article class="map__article">
-                <dl class="text">
-                  <dt>見出しが入ります</dt>
-                  <p class="border"></p>
-                  <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd>
-                </dl>
-              </article>
-            </div>
-          </div>
-        </section>
-        <!-- --------------wrapper---------------- -->
-      </div>
-    </div>
-    <!-- -----------------sidemenu------------------- -->
-    <section class="side-menu">
-      <div class="side-menu__wrapper">
-        <h2 class="side-menu__ttl">Menu</h2>
-        <ul>
-          <li class="side-menu__list">バーガー</li>
-          <li class="side-menu__item">ハンバーガー</li>
-          <li class="side-menu__item">チーズバーガー</li>
-          <li class="side-menu__item">テリヤキバーガー</li>
-          <li class="side-menu__item">アボカドバーガー</li>
-          <li class="side-menu__item">フィッシュバーガー</li>
-          <li class="side-menu__item">ベーコンバーガー</li>
-          <li class="side-menu__item">チキンバーガー</li>
-        </ul>
-
-        <ul>
-          <li class="side-menu__list">サイド</li>
-          <li class="side-menu__item">ポテト</li>
-          <li class="side-menu__item">サラダ</li>
-          <li class="side-menu__item">ナゲット</li>
-          <li class="side-menu__item">コーン</li>
-        </ul>
-
-        <ul>
-          <li class="side-menu__list">ドリンク</li>
-          <li class="side-menu__item">ファンタ</li>
-          <li class="side-menu__item">コーラ</li>
-          <li class="side-menu__item">アップル</li>
-          <li class="side-menu__item">紅茶</li>
-          <li class="side-menu__item">コーヒー</li>
-
-        </ul>
-      </div>
+        </div>
     </section>
-    <!-- -------------------all-wrapper--------------- -->
-  </div>
-  <footer>
-    <h2>ショップ情報 | ヒストリー</h2>
-    <p>Copyright RaiseTech</p>
-  </footer>
+    <!-- -------------------------------main--------------------------------------- -->
+    <section class="l-main">
+        <article class="p-article__menu1">
+            <h2>Take Out</h2>
+            <p class="p-article__border"></p>
+            <div class="p-article__textarea">
+                <dl>
+                    <dt>小見出しが入ります</dt>
+                    <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。 </dd>
+                </dl>
+                <dl>
+                    <dt>小見出しが入ります</dt>
+                    <dd>
+                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    </dd>
+                </dl>
+        </article>
+        <article class="p-article__menu2">
+            <h2>Eat in</h2>
+            <p class="p-article__border"></p>
+            <div class="p-article__textarea">
+                <dl>
+                    <dt>小見出しが入ります</dt>
+                    <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。 </dd>
+                </dl>
+                <dl>
+                    <dt>小見出しが入ります</dt>
+                    <dd>
+                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    </dd>
+                </dl>
+        </article>
+    </section>
 </body>
 
 </html>
