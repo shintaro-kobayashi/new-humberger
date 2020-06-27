@@ -115,6 +115,19 @@ h2 {
   font-size: 2vw;
 }
 
+.l-footer {
+  line-height: 1.8rem;
+  height: 2rem;
+  width: 100%;
+  color: #ffffff;
+  background-image: url(../img/_____1.png);
+  background-size: cover;
+  text-align: center;
+  padding: 2rem 0;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
 .l-header {
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
@@ -136,7 +149,6 @@ h2 {
 .l-hero {
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
-  position: relative;
   width: 100%;
 }
 
@@ -150,7 +162,7 @@ h2 {
 .l-hero p {
   color: #ffffff;
   position: absolute;
-  top: 60%;
+  top: 35%;
   left: 5rem;
   font-size: 2rem;
 }
@@ -176,6 +188,10 @@ h2 {
   line-height: 3;
 }
 
+.p-all-wrap {
+  width: 100%;
+}
+
 .p-search-form {
   float: right;
   width: 30vw;
@@ -183,7 +199,7 @@ h2 {
 }
 
 .p-search-form__keyword {
-  background-image: url(/img/検索用の虫眼鏡アイコン素材.png);
+  background-image: url(/img/search-solid.svg);
 }
 
 .p-article__menu1, .p-article__menu2 {
@@ -225,13 +241,14 @@ h2 {
 }
 
 .p-article__textarea dt {
+  padding: 2rem;
   font-size: 1.5em;
-  padding: 10px;
+  padding: 1rem;
 }
 
 .p-article__textarea dd {
-  margin-top: 15px;
-  padding: 10px;
+  margin: 0;
+  padding: 1rem;
 }
 
 .p-article__menu2 {
@@ -243,7 +260,7 @@ h2 {
   background-image: url(../img/__________2020_02_10_11_47_42.png);
   background-size: cover;
   position: relative;
-  height: 20rem;
+  height: 22rem;
   width: 100%;
 }
 
@@ -291,23 +308,18 @@ dd {
 
 .p-sidebar__wrapper {
   background-color: #f2ede9;
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: 25%;
 }
 
-.p-sidebar__ttl {
+.p-sidebar__wrapper h2 {
   font-size: 3rem;
   padding: 3rem 0 3rem 2rem;
 }
 
-.p-sidebar__list {
-  font-size: 1.5rem;
+.p-sidebar__wrapper li {
+  font-size: 1rem;
   list-style: none;
   padding: 2rem;
-}
-
-.p-sidebar__item {
-  list-style: none;
-  padding-left: 4rem;
 }
 /*# sourceMappingURL=style.css.map */
