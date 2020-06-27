@@ -3,6 +3,10 @@ float: right;
 width: 30vw;
 line-height: 7rem;
 
+&__keyword{
+background-image: url(/img/検索用の虫眼鏡アイコン素材.png);
+}
+
 }
 
 // ----------------------------main--------------------------------
@@ -113,3 +117,30 @@ line-height: 7rem;
         margin: 1rem;
         line-height: 1.2;
     }        
+
+    // -------------------------------sidebar-------------------------------
+    .p-sidebar {
+       
+        &__wrapper{
+            background-color: #f2ede9;
+            height: 100%;
+            width: 100%;
+          }
+
+
+        &__ttl {
+            font-size: 3rem;
+            padding: 3rem 0 3rem 2rem;
+        }
+        
+        &__list {
+            font-size: 1.5rem;
+            list-style: none;
+            padding: 2rem;
+        }
+        
+        &__item {
+            list-style: none;
+            padding-left: 4rem;
+        }
+    }

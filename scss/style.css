@@ -116,6 +116,8 @@ h2 {
 }
 
 .l-header {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
   height: 7rem;
   width: 100%;
   background-color: #FFF7EF;
@@ -132,6 +134,8 @@ h2 {
 }
 
 .l-hero {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
   position: relative;
   width: 100%;
 }
@@ -152,16 +156,34 @@ h2 {
 }
 
 .l-main {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
 
+.l-map {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.l-sidebar {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  color: #707070;
+  line-height: 3;
+}
+
 .p-search-form {
   float: right;
   width: 30vw;
   line-height: 7rem;
+}
+
+.p-search-form__keyword {
+  background-image: url(/img/検索用の虫眼鏡アイコン素材.png);
 }
 
 .p-article__menu1, .p-article__menu2 {
@@ -265,5 +287,27 @@ h2 {
 dd {
   margin: 1rem;
   line-height: 1.2;
+}
+
+.p-sidebar__wrapper {
+  background-color: #f2ede9;
+  height: 100%;
+  width: 100%;
+}
+
+.p-sidebar__ttl {
+  font-size: 3rem;
+  padding: 3rem 0 3rem 2rem;
+}
+
+.p-sidebar__list {
+  font-size: 1.5rem;
+  list-style: none;
+  padding: 2rem;
+}
+
+.p-sidebar__item {
+  list-style: none;
+  padding-left: 4rem;
 }
 /*# sourceMappingURL=style.css.map */
