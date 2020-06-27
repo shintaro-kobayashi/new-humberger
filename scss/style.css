@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -114,17 +115,6 @@ h2 {
   font-size: 2vw;
 }
 
-h3 {
-  font-size: 7vw;
-  color: white;
-}
-
-h4 {
-  font-size: 1.6vw;
-  color: #707070;
-  font-weight: normal;
-}
-
 .l-header {
   height: 7rem;
   width: 100%;
@@ -174,15 +164,25 @@ h4 {
   line-height: 7rem;
 }
 
-.p-article__menu1 {
+.p-article__menu1, .p-article__menu2 {
   background-image: url(../img/three_burgers_on_brown_wooden_@2x.png);
   width: 100%;
   height: 60vw;
-  margin: 4rem 3rem;
-  position: relative;
+  margin: 3rem 2rem;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.p-article__menu1 h2 {
+.p-article__menu1 h2, .p-article__menu2 h2 {
   font-size: 2rem;
   color: #ffffff;
   margin: 1rem 1.5rem;
@@ -197,13 +197,73 @@ h4 {
 .p-article__textarea dl {
   width: 90%;
   background-color: #ffffff;
-  margin: 2rem;
-  bottom: 1rem;
+  margin: 1rem auto;
+  bottom: 0;
   opacity: 0.8;
 }
 
 .p-article__textarea dt {
   font-size: 1.5em;
   padding: 10px;
+}
+
+.p-article__textarea dd {
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.p-article__menu2 {
+  background-image: url(../img/ID473d814b175bd517b56eb309f295.png);
+  background-size: cover;
+}
+
+.p-map__wrapper {
+  background-image: url(../img/__________2020_02_10_11_47_42.png);
+  background-size: cover;
+  position: relative;
+  height: 20rem;
+  width: 100%;
+}
+
+.p-map__wrapper::before {
+  /* 透過した黒を上から重ねるイメージ */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* 自由に位置指定 */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: " ";
+}
+
+.p-map__article {
+  height: 100%;
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.p-map__textarea {
+  margin: 2rem;
+  height: 20rem;
+}
+
+.p-map__textarea dt {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.p-map__border {
+  border: 1px solid #fff;
+  width: 3rem;
+  margin: 1rem;
+}
+
+dd {
+  margin: 1rem;
+  line-height: 1.2;
 }
 /*# sourceMappingURL=style.css.map */

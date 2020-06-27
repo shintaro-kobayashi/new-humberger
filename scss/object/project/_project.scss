@@ -8,13 +8,21 @@ line-height: 7rem;
 // ----------------------------main--------------------------------
 
 .p-article{
-    &__menu1{
+
+    &__menu1,
+    &__menu2{
 
         background-image: url(../img/three_burgers_on_brown_wooden_@2x.png);
         width: 100%;
         height: 60vw;
-        margin: 4rem 3rem;
-        position: relative;
+        margin: 3rem 2rem;
+        background-size: cover;
+        display:flex;
+        flex-flow: column;
+        justify-content:space-between;
+        
+    
+        
         h2{
             font-size: 2rem;
             color: #ffffff;
@@ -29,19 +37,79 @@ line-height: 7rem;
     }
     &__textarea{
         
-        
         dl{
             width: 90%;
             background-color: #ffffff;
-            margin: 2rem;
-            bottom: 1rem;
+            margin: 1rem auto;
+            bottom: 0;
             opacity: 0.8;
         }
         dt{
             font-size: 1.5em;
             padding: 10px;
         }
+        dd{
+            margin-top: 15px;
+  padding: 10px;
+        }
         
     }
-
+    &__menu2{
+        background-image: url(../img/ID473d814b175bd517b56eb309f295.png);
+  background-size: cover;
+    }
 }
+
+// ---------------------------------map------------------------------------
+
+
+.p-map{
+
+    &__wrapper {
+        background-image: url(../img/__________2020_02_10_11_47_42.png);
+        background-size: cover;
+        position: relative;
+        height: 20rem;
+        width: 100%;
+    }
+
+    &__wrapper::before {
+        /* 透過した黒を上から重ねるイメージ */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* 自由に位置指定 */
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: " ";
+      }
+
+      &__article {
+        height: 100%;
+        width: 60%;
+        background-color: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        color: #ffffff;
+        opacity: 0.7;
+      }
+      &__textarea {
+        margin: 2rem;
+        height: 20rem;
+
+        dt {
+            font-size: 2rem;
+            padding: 1rem;
+          }
+    }
+     &__border{
+         border: 1px solid #fff;
+         width: 3rem;
+         margin: 1rem;
+     }
+     
+    }
+    dd{
+        margin: 1rem;
+        line-height: 1.2;
+    }        
