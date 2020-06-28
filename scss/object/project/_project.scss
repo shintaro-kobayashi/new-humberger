@@ -3,15 +3,24 @@
 //   display: flex;
 }
 
+.p-search-form::before{
+    content: "";
+    width: 17px;
+    height: 17px;
+    background-image: url(/img/search-solid.svg);
+    font-size: 1.6rem;
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: calc( 50% - 7px);
+
+}
 
 .p-search-form{
 float: right;
-width: 30vw;
+width: 20rem;
 line-height: 7rem;
-
-&__keyword{
-    background-image: url(/img/search-solid.svg);
-}
+position: relative;
 
 }
 

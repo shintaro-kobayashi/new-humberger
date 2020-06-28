@@ -162,8 +162,8 @@ h2 {
 .l-hero p {
   color: #ffffff;
   position: absolute;
-  top: 35%;
   left: 5rem;
+  top: 14rem;
   font-size: 2rem;
 }
 
@@ -192,14 +192,23 @@ h2 {
   width: 100%;
 }
 
-.p-search-form {
-  float: right;
-  width: 30vw;
-  line-height: 7rem;
+.p-search-form::before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  background-image: url(/img/search-solid.svg);
+  font-size: 1.6rem;
+  display: block;
+  position: absolute;
+  left: 5px;
+  top: calc( 50% - 7px);
 }
 
-.p-search-form__keyword {
-  background-image: url(/img/search-solid.svg);
+.p-search-form {
+  float: right;
+  width: 20rem;
+  line-height: 7rem;
+  position: relative;
 }
 
 .p-article__menu1, .p-article__menu2 {
