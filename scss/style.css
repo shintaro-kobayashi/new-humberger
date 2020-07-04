@@ -104,6 +104,9 @@ input, select {
 html,
 body {
   max-width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-template: "l-header l-sidebar" 140px "l-hero l-sidebar" 300px "l-main l-sidebar" 1192px "l-map l-sidebar" 649px "l-footer l-footer" 150px /1fr 19%;
 }
 
 h1 {
@@ -117,27 +120,21 @@ h2 {
 
 .l-footer {
   line-height: 1.8rem;
-  height: 2rem;
-  width: 100%;
   color: #ffffff;
   background-image: url(../img/_____1.png);
   background-size: cover;
   text-align: center;
   padding: 2rem 0;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  grid-area: l-footer;
 }
 
 .l-header {
-  -ms-flex-preferred-size: 70%;
-      flex-basis: 70%;
-  height: 7rem;
-  width: 100%;
   background-color: #FFF7EF;
   float: left;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  grid-area: l-header;
 }
 
 .l-header h1 {
@@ -147,9 +144,7 @@ h2 {
 }
 
 .l-hero {
-  -ms-flex-preferred-size: 70%;
-      flex-basis: 70%;
-  width: 100%;
+  grid-area: l-hero;
 }
 
 .l-hero img {
@@ -168,24 +163,17 @@ h2 {
 }
 
 .l-main {
-  -ms-flex-preferred-size: 70%;
-      flex-basis: 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
+  grid-area: l-main;
 }
 
 .l-map {
-  -ms-flex-preferred-size: 70%;
-      flex-basis: 70%;
+  grid-area: l-map;
 }
 
 .l-sidebar {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
   color: #707070;
   line-height: 3;
+  grid-area: l-sidebar;
 }
 
 .p-all-wrap {

@@ -1,10 +1,11 @@
 .l-header{
-    flex-basis: 70%;
-    height: 7rem;
-    width: 100%;
-    background-color:#FFF7EF;
+    // flex-basis: 70%;
+    // height: 7rem;
+    // width: 100%;
+    background-color:#fff7ef;
     float: left;
     justify-content: space-between;
+    grid-area: l-header;
 
     h1 {
         display: inline-block;
@@ -12,5 +13,6 @@
         margin-left: 1.5rem;
 
     }
+
 }
 
